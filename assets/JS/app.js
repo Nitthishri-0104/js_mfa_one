@@ -32,10 +32,10 @@ document.getElementById("btn").addEventListener("click",function generate(){
     let pass1;
 
         for (let i = 0; i < charLength; i++) {
-            var char = Math.floor(Math.random() *
+            let char = Math.floor(Math.random() *
                 str1.length + 1);
     
-                pass1 += str1
+                pass1 += char
                 
                 
         }
@@ -48,9 +48,9 @@ document.getElementById("btn").addEventListener("click",function generate(){
             'abcdefghijklmnopqrstuvwxyz'
     
         for (let i = 0; i < charLength; i++) {
-            var char = Math.floor(Math.random() *
+            let char = Math.floor(Math.random() *
                 str2.length + 1);
-                pass2 += str2
+                pass2 += char
         }
         document.getElementById("password_result").innerHtml = pass2;
     }
@@ -60,7 +60,7 @@ document.getElementById("btn").addEventListener("click",function generate(){
             'abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*';
             let pass3;
         for (let i = 1; i <= 8; i++) {
-            var char = Math.floor(Math.random() *
+        let char = Math.floor(Math.random() *
                 str3.length + 1);
                 pass3 += str3
         }

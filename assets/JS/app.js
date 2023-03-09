@@ -24,6 +24,7 @@ let result=document.getElementById("password_result").value
 document.getElementById("btn").addEventListener("click",function generate(){
 
     
+    
 
     if (checkbox1 == true) {
 
@@ -38,7 +39,7 @@ document.getElementById("btn").addEventListener("click",function generate(){
                 
                 
         }
-        result=pass1
+        document.getElementById("password_result").innerHtml = pass1;
     }
     
      else if (checkbox1 == true && checkbox2 == true) {
@@ -51,7 +52,7 @@ document.getElementById("btn").addEventListener("click",function generate(){
                 str2.length + 1);
                 pass2 += str2
         }
-        result=pass1
+        document.getElementById("password_result").innerHtml = pass2;
     }
 
      else if (checkbox1 == true && checkbox2 == true && checkbox3 == true) {
@@ -63,7 +64,7 @@ document.getElementById("btn").addEventListener("click",function generate(){
                 str3.length + 1);
                 pass3 += str3
         }
-        result=pass1
+        document.getElementById("password_result").innerHtml = pass3;
     }
 })
 
